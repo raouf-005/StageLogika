@@ -1,38 +1,38 @@
-import React , { useContext,useState,createContext } from "react";
+import React , { useState,createContext } from "react";
 
-const ChildContext = createContext()
-const ChildForm=createContext()
+export const ChildContext = createContext()
+export const ChildForm=createContext()
 
 
 
-export const ChildProvider=({children})=>{
+export function ChildProvider({children}){
     const [ChildData,setChildData]=useState([
         {
             nom: "nom1",
             prenom: "prenom1",
             matricule: "matricule1",
             lieunaiss: "lieunaiss1",
-            datenaiss: "datenaiss1",
-            photo: "photo1",
-            parent: "parent1"
+            datenaiss: new Date().toJSON().slice(0, 10),
+            photo: "",
+            parent: "hello"
         },
         {
             nom: "nom2",
             prenom: "prenom2",
             matricule: "matricule2",
             lieunaiss: "lieunaiss2",
-            datenaiss: "datenaiss2",
-            photo: "photo2",
-            parent: "parent2"
+            datenaiss: new Date().toJSON().slice(0, 10),
+            photo: "",
+            parent: ""
         },
         {
             nom: "nom3",
             prenom: "prenom3",
             matricule: "matricule3",
             lieunaiss: "lieunaiss3",
-            datenaiss: "datenaiss3",
-            photo: "photo3",
-            parent: "parent3"
+            datenaiss: new Date().toJSON().slice(0, 10),
+            photo: "",
+            parent: ""
         },
       ])
       const [formValue, setFormValue] = useState({

@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import '../styles/table.css'
-import { ChildContext,ChildForm } from "../App";
+import {ChildContext,ChildForm} from './ChildProvider'
 
 
 const ChildTable = () => {

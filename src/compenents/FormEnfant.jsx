@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import "../styles/form.css";
-import { ChildContext, ChildForm } from "../App";
+import { ChildContext, ChildForm } from "./ChildProvider";
 
 function FormEnfant() {
     const { ChildData, setChildData } = useContext(ChildContext);
@@ -121,7 +121,7 @@ function FormEnfant() {
                     id="parent"
                     value={formValue.parent}
                     onChange={handleChange}
-                    defaultValue={"parent1"}
+                    
                 >
                     <option value="parent1">parent1</option>
                     <option value="parent2">parent2</option>
