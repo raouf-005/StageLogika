@@ -26,15 +26,15 @@ function FormEnfant() {
         } else {
             setChildData((prevChildData) => [...prevChildData, formValue]);
         }
-        setFormValue({
-            nom: "",
-            prenom: "",
-            matricule: "",
-            lieunaiss: "",
-            datenaiss: "",
-            photo: "",
-            parent: "",
-        });
+            setFormValue({
+                nom: "",
+                prenom: "",
+                matricule: "",
+                lieunaiss: "",
+                datenaiss: "",
+                photo: "",
+                parent: "",
+            });
     };
 
     const checkForm = () => {

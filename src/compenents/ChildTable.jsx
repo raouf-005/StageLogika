@@ -12,6 +12,15 @@ const ChildTable = () => {
         setChildData(ChildData.filter((child) => {
             return child.matricule !== matricule
         }))
+        setFormValue({
+            nom: "",
+            prenom: "",
+            matricule: "",
+            lieunaiss: "",
+            datenaiss: "",
+            photo: "",
+            parent: "",
+        });
     }
 
     const modifyChild = (matricule) => {
