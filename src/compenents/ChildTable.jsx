@@ -6,7 +6,7 @@ import {ChildContext,ChildForm} from './ChildProvider'
 const ChildTable = () => {
    const {ChildData,setChildData}=useContext(ChildContext)
    const {formValue, setFormValue,modify,setModify} =useContext(ChildForm)
-   
+   // i didn't create a separate file for modifying and deleting child due to the function simpliity
    const deleteChild = (matricule) => {
         
         setChildData(ChildData.filter((child) => {
@@ -47,7 +47,7 @@ const ChildTable = () => {
                             <td>{child.photo}</td>
                             <td>{child.parent}</td>
                             <td>
-                                <button onClick={()=>{modifyChild(child.matricule)}}>Modifier</button>
+                                <button onClick={()=>modifyChild(child.matricule)}>Modifier</button>
                                 <button onClick={()=>deleteChild(child.matricule)}>Deleted</button>
                             </td>
                         </tr>
