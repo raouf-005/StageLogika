@@ -31,7 +31,7 @@ const ChildTable = () => {
 
     }
     return (
-        <table className="table">
+        <table className="table" >
             <thead>
                 <tr>
                     <th>Nom</th>
@@ -41,7 +41,7 @@ const ChildTable = () => {
                     <th>Date de naissance</th>
                     <th>Photo</th>
                     <th>Parent</th>
-                
+                    <th>Delete/Modify</th>
                 </tr>
             </thead>
             <tbody>
@@ -56,8 +56,8 @@ const ChildTable = () => {
                             <td>{child.photo}</td>
                             <td>{child.parent}</td>
                             <td>
-                                <button onClick={()=>modifyChild(child.matricule)}>Modifier</button>
-                                <button onClick={()=>deleteChild(child.matricule)}>Deleted</button>
+                                <button onClick={()=>deleteChild(child.matricule)} className="deleteButton">Deleted</button>
+                                <button onClick={()=>modifyChild(child.matricule)} className="modifyButton">Modifier</button>
                             </td>
                         </tr>
                     )

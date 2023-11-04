@@ -1,11 +1,67 @@
+
 .formStyling{
     display: flex;
+    flex: 1;
     flex-direction: column;
-
+    background-color: #FAF8F8;
+    box-shadow: 0px 5px 16px 0px rgba(8, 15, 52, 0.06);
+    max-width: 500px;
+    align-items: center;
+    padding: max(2rem, 2vw) ;
+    border-radius: 1rem;
+    color: #170F49;
+    font: 500 18px 'DM Sans';
+    margin-right: 10px;
 }
 
-
-
-.formStyling input, select, button{
-    max-width: fit-content;
+.inputStyling ,.inputDateStyling,input[type="file"]::file-selector-button{
+    padding: 12px 20px; 
+    border-radius: 46px;
+    border: 1px solid #EFF0F6;
+    margin-bottom: 1rem;
+    box-shadow: 0px 2px 6px 0px rgba(19, 18, 66, 0.07);
+    text-align: left;
+    font-family: 'DM Sans';
+    
 }
+.inputStyling{
+    width: 80%;
+}
+
+.formStyling input[type="file"]::file-selector-button{
+    
+    border-radius: 0.6rem;
+    border: none;
+    margin-right: 12px;
+    background-color:white ;   
+}
+
+.inputStyling::placeholder{
+    font-family: 'DM Sans';
+    color: #170F49;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.formStyling label{
+    
+    display: block;
+}
+.formStyling input#Photo{
+    width: 280px;
+}
+.submitButton{
+    margin-top: 1rem;
+    padding: 12px 42px; 
+    border-radius: 0.4rem;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+.inputContainer{
+    width: 50%;
+    margin-bottom: 0.3rem;
+}
+

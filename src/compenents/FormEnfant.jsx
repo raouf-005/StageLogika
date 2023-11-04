@@ -14,9 +14,9 @@ function FormEnfant() {
             [target.name]: target.value,
         }));
     };
-
     const handleSubmit = (e) => {
         e.preventDefault();
+        console.log(formValue);
         if (modify) {
             const newChildData = ChildData.map((child) =>
                 child.matricule === modify.matricule ? formValue : child
@@ -54,17 +54,20 @@ function FormEnfant() {
 
     return (
         <form className="formStyling" onSubmit={handleSubmit}>
-            <div>
+            <h1>ChildForm</h1>
+            <div className="inputContainer">
                 <label htmlFor="Nom">Nom de l'enfant</label>
-                <input
+                <input 
                     type="text"
                     id="Nom"
                     name="nom"
                     value={formValue.nom}
                     onChange={handleChange}
+                    className="inputStyling"
+                    placeholder="Entrer le nom"
                 />
             </div>
-            <div>
+            <div className="inputContainer">
                 <label htmlFor="Prenom">Prénom de l'enfant</label>
                 <input
                     type="text"
@@ -72,9 +75,11 @@ function FormEnfant() {
                     name="prenom"
                     value={formValue.prenom}
                     onChange={handleChange}
+                    className="inputStyling"
+                    placeholder="Entrer le prenom"
                 />
             </div>
-            <div>
+            <div className="inputContainer">
                 <label htmlFor="Matricule">Matricule</label>
                 <input
                     type="text"
@@ -82,9 +87,11 @@ function FormEnfant() {
                     name="matricule"
                     value={formValue.matricule}
                     onChange={handleChange}
+                    className="inputStyling"
+                    placeholder="Entrer le matricule"
                 />
             </div>
-            <div>
+            <div className="inputContainer">
                 <label htmlFor="Lieunaiss">Lieu de naissance</label>
                 <input
                     type="text"
@@ -92,9 +99,11 @@ function FormEnfant() {
                     name="lieunaiss"
                     value={formValue.lieunaiss}
                     onChange={handleChange}
+                    className="inputStyling"
+                    placeholder="Entrer le lieu de naissance"
                 />
             </div>
-            <div>
+            <div className="inputContainer">
                 <label htmlFor="Datanaiss">Date de naissance</label>
                 <input
                     type="date"
@@ -102,9 +111,11 @@ function FormEnfant() {
                     name="datenaiss"
                     value={formValue.datenaiss}
                     onChange={handleChange}
+                    className="inputDateStyling"
+                    
                 />
             </div>
-            <div>
+            <div className="inputContainer">
                 <label htmlFor="Photo">Photo de l'enfant</label>
                 <input
                     type="file"
@@ -112,15 +123,19 @@ function FormEnfant() {
                     name="photo"
                     value={formValue.photo}
                     onChange={handleChange}
+                    accept="image/*"
+                    
                 />
             </div>
-            <div>
+            <div className="inputContainer">
                 <label htmlFor="parent">Parents:</label>
                 <select
                     name="parent"
                     id="parent"
                     value={formValue.parent}
                     onChange={handleChange}
+                    className="inputStyling"
+                    
                     
                 >
                     <option value="parent1">parent1</option>
@@ -129,7 +144,11 @@ function FormEnfant() {
                 </select>
             </div>
 
-            <button type="submit" disabled={!checkForm()}>
+            <button 
+            type="submit"
+            disabled={!checkForm()}
+            className="submitButton"
+            >
                 Submit
             </button>
         </form>

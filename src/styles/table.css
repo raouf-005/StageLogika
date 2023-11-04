@@ -1,0 +1,36 @@
+.table{
+    flex: 1;
+    font-size: 18px;
+    text-align: center;
+    height: max-content;
+    margin-top: 30px;
+    font-family: 'DM Sans';
+}
+.table thead{
+    background-color: #F2F2F2;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+
+.table tbody{
+    font-size: 16.5px;
+    
+}
+
+.deleteButton{
+    background-color: rgba(255, 6, 6, 0.85);
+    border: none;
+    border-radius: 0.5rem;
+    padding: 10px 18px;
+    color: white;
+    font-size: 16px;
+}
+.modifyButton{
+    background-color: rgba(0, 0, 255, 0.85);
+    border: none;
+    border-radius: 0.5rem;
+    padding: 10px 18px;
+    color: white;
+    font-size: 16px;
+}
