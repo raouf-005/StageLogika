@@ -1,0 +1,11 @@
+.formStyling{
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+
+.formStyling input, select, button{
+    max-width: fit-content;
+}
