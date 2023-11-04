@@ -5,7 +5,7 @@ import {ChildContext,ChildForm} from './ChildProvider'
 
 const ChildTable = () => {
    const {ChildData,setChildData}=useContext(ChildContext)
-   const {formValue, setFormValue,modify,setModify} =useContext(ChildForm)
+   const { formValue,setFormValue,setModify} =useContext(ChildForm)
    // i didn't create a separate file for modifying and deleting child due to the function simpliity
    const deleteChild = (matricule) => {
         
@@ -26,7 +26,7 @@ const ChildTable = () => {
     const modifyChild = (matricule) => {
         const childToModify = ChildData.find(child => child.matricule === matricule);
         setFormValue(childToModify);
-        setModify(childToModify)
+        setModify(childToModify);
         
 
     }

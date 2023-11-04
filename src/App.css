@@ -2,7 +2,11 @@
     max-width: 100%;
     margin: 0 auto;
     display: flex;
-   
+    
+  }
+
+  body{
+    overflow: hidden;
   }
 
   @media (max-width:1000px){

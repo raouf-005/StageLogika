@@ -12,6 +12,7 @@
     color: #170F49;
     font: 500 18px 'DM Sans';
     margin-right: 10px;
+    padding-top: 5px;
 }
 
 .inputStyling ,.inputDateStyling,input[type="file"]::file-selector-button{
@@ -59,6 +60,12 @@
     font-size: 16px;
     border: none;
     cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.submitButton:disabled{
+    opacity: 0.5;
+    cursor: not-allowed;
 }
 .inputContainer{
     width: 50%;
