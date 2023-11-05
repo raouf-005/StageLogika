@@ -59,7 +59,8 @@ import { ChildContext, ChildForm } from "./ChildProvider";
                 formValue.lieunaiss &&
                 !ChildData.find((child) => child.matricule === formValue.matricule) &&
                 formValue.datenaiss &&
-                formValue.matricule
+                formValue.matricule &&
+                formValue.parent
             );
         };
 
@@ -67,7 +68,7 @@ import { ChildContext, ChildForm } from "./ChildProvider";
             <form className="formStyling" onSubmit={handleSubmit}>
                 <h1>ChildForm</h1>
                 <div className="inputContainer">
-                    <label htmlFor="Nom">Nom de l'enfant</label>
+                    <label htmlFor="Nom">Nom de l'enfant <span className="obligedSYmbol">&lowast;</span></label>
                     <input
                         type="text"
                         id="Nom"
@@ -79,7 +80,7 @@ import { ChildContext, ChildForm } from "./ChildProvider";
                     />
                 </div>
                 <div className="inputContainer">
-                    <label htmlFor="Prenom">Prénom de l'enfant</label>
+                    <label htmlFor="Prenom">Prénom de l'enfant <span className="obligedSYmbol">&lowast;</span></label>
                     <input
                         type="text"
                         id="Prenom"
@@ -91,7 +92,7 @@ import { ChildContext, ChildForm } from "./ChildProvider";
                     />
                 </div>
                 <div className="inputContainer">
-                    <label htmlFor="Matricule">Matricule</label>
+                    <label htmlFor="Matricule">Matricule <span className="obligedSYmbol">&lowast;</span></label>
                     <input
                         type="text"
                         id="Matricule"
@@ -103,7 +104,7 @@ import { ChildContext, ChildForm } from "./ChildProvider";
                     />
                 </div>
                 <div className="inputContainer">
-                    <label htmlFor="LieuNaiss">Lieu de naissance</label>
+                    <label htmlFor="LieuNaiss">Lieu de naissance <span className="obligedSYmbol">&lowast;</span></label>
                     <input
                         type="text"
                         id="LieuNaiss"
@@ -115,7 +116,7 @@ import { ChildContext, ChildForm } from "./ChildProvider";
                     />
                 </div>
                 <div className="inputContainer">
-                    <label htmlFor="DateNaiss">Date de naissance</label>
+                    <label htmlFor="DateNaiss">Date de naissance <span className="obligedSYmbol">&lowast;</span></label>
                     <input
                         type="date"
                         id="DateNaiss"
@@ -137,7 +138,7 @@ import { ChildContext, ChildForm } from "./ChildProvider";
                     />
                 </div>
                 <div className="inputContainer">
-                    <label htmlFor="Parent">Parent</label>
+                    <label htmlFor="Parent">Parent <span className="obligedSYmbol">&lowast;</span></label>
                     <select
                     name="parent"
                     id="Parent"

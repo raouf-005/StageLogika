@@ -22,6 +22,7 @@ const ChildTable = () => {
             photo: "",
             parent: "",
         });
+        setModify("");
     }
 
     const modifyChild = (matricule) => {
