@@ -6,7 +6,8 @@ import {ChildContext,ChildForm} from './ChildProvider'
 const ChildTable = () => {
    const {ChildData,setChildData}=useContext(ChildContext)
    const { formValue,setFormValue,setModify} =useContext(ChildForm)
-   // i didn't create a separate file for modifying and deleting child due to the function simpliity
+   // i didn't create a separate file for modifying and deleting child due to the function simplicity
+   //and i didn't do a pop up i thought it's better to give the past information to the form file to make the user more relifed when modifying the values
    const deleteChild = (matricule) => {
         
         setChildData(ChildData.filter((child) => {

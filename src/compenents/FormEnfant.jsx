@@ -45,7 +45,9 @@ import { ChildContext, ChildForm } from "./ChildProvider";
             });
             fileInputRef.current.value = "";
         };
-
+//the check form funtion check both when updating the value or set a new value when updating you can't change the matricule 
+//the modify button while get disabled the moment you change the matricule even if u replaced with an existing matricule that doesn't match the matricule of the child that we want to change
+// it will not work
         const checkForm = () => {
             if (modify) {
                 return formValue.matricule === modify.matricule;

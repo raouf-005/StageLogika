@@ -3,7 +3,7 @@ export const ChildContext = createContext()
 export const ChildForm=createContext()
 
 
-
+// i used like an existing array of children to make the user more comfortable when he is testing the app
 
 export function ChildProvider({children}){
     const [ChildData,setChildData]=useState([
@@ -14,7 +14,7 @@ export function ChildProvider({children}){
             lieunaiss: "lieunaiss1",
             datenaiss: new Date().toJSON().slice(0, 10),
             photo: "",
-            parent: "hello"
+            parent: "parent1"
         },
         {
             nom: "nom2",
