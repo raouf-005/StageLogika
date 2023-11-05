@@ -18,7 +18,7 @@ Welcome to the Child Management project developed with React. This application a
 
 - I have integrated React Context to manage the global state of the application. This allows for efficient handling of data and actions for adding and modifying children.
 
-###Bonus
+### Bonus
 -I removed the EditChildForm and used the orginal form to update so no popup and better ui experience for the user
 -I tried every possible combination off buttons to try and create a bug but i made the neccesarry function to prevent it from happening
 -Csss styling i did a basic css styling to reduce the time of the building the website (3 days of working to finsih it)
