@@ -33,4 +33,4 @@ If you have any questions or suggestions, please feel free to contact me.
 
 I appreciate your contribution to this Child Management project with React. Enjoy using it!
 
-**Name Surname: Abderraouf Derardja**
+**Full Name: Abderraouf Derardja**
