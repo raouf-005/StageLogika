@@ -11,10 +11,6 @@ import { ChildContext, ChildForm } from "./ChildProvider";
         
 
         const handleChange = ({ target }) => {
-            if (target.value===''&&target.name==='parent')
-            {
-                target.value='parent1'
-            }
                 setFormValue((prevFormValue) => ({
                     ...prevFormValue,
                     [target.name]: target.name === "photo"?target.files[0].name:target.value,
@@ -142,12 +138,14 @@ import { ChildContext, ChildForm } from "./ChildProvider";
                     <label htmlFor="Parent">Parent</label>
                     <select
                     name="parent"
-                    id="parent"
+                    id="Parent"
                     value={formValue.parent}
                     onChange={handleChange}
                     className="inputStyling"   
+                    
                 >
-                    <option value="parent1" >parent1</option>
+                    <option value="" >Choose a parent</option>
+                    <option value="parent1">parent1</option>
                     <option value="parent2">parent2</option>
                     <option value="parent3">parent3</option>
                 </select>
